@@ -69,6 +69,7 @@ cask 'virtualbox-extension-pack'
 cask 'karabiner'
 
 # Fonts
+cask 'font-meslo-lg-for-powerline'
 cask 'font-sauce-code-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
