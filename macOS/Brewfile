@@ -43,6 +43,8 @@ brew 'pyenv'
 brew 'rbenv'
 
 # Apps
+cask 'alfred'
+cask 'hammerspoon'
 cask 'ngrok'
 cask 'aerial'
 cask 'atom'

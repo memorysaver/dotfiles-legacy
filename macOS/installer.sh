@@ -37,6 +37,7 @@ source $HOME/.dotfiles/macOS/.macOS
 
 # Symlinks
 ln -sfv "$HOME/.dotfiles/mackup/.mackup.cfg" ~
+ln -sfv "$HOME/.dotfiles/.hammerspoon" ~
 ln -sfv "$HOME/.dotfiles/git/.gitconfig" ~
 ln -sfv "$HOME/.dotfiles/git/.gitignore_global" ~
 ln -sfv "$HOME/.dotfiles/git/.gitmessage" ~
