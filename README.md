@@ -36,3 +36,16 @@ You can maintain your version of `.mackup.cfg` that should link at `/.dotfiles/m
 ``` bash
 mackup backup
 ```
+
+## More stuff
+### Solarized Theme
+- iterm
+- tmux
+- terminal
+
+
+### Reference
+- [Mathias Bynens's macOS etting] (https://mths.be/osx)
+- [driesvints's dotfile config](https://driesvints.com/blog/getting-started-with-dotfiles/)
+- [solarized](http://ethanschoonover.com/solarized)
+

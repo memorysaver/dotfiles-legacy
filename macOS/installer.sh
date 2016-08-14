@@ -22,7 +22,9 @@ sh -c "$(nohup curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-z
 ssh-keygen -t rsa -C "mfa1484@gmail.com"
 
 # Solarized terminal theme
-git clone git://github.com/altercation/solarized.git ~/solarized
+if test ! $(find ~/solarized); then
+  git clone git://github.com/altercation/solarized.git ~/solarized
+fi
 
 # macOS config
 source $HOME/.dotfiles/macOS/.macOS
