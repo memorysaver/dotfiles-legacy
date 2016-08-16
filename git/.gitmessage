@@ -1,11 +1,16 @@
-Why:
+# If applied, this commit will ...
 
-*
 
-This change addresses the need by:
+# Explain why this change is being made
 
-*
 
-# 50-character subject line
-#
-# 72-character wrapped longer description.
+# Provide links to any relevant tickets, articles or other resources
+
+
+
+# Tips: http://chris.beams.io/posts/git-commit/
+# 1. Separate subject from body with a blank line
+# 2. Limit the subject line to 50 characters
+# 3. Capitalize the subject line
+# 4. Do not end the subject line with a period
+# 5. Use the imperative mood in the subject line
