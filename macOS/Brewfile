@@ -45,6 +45,7 @@ brew 'rbenv'
 # Apps
 cask 'alfred'
 cask 'hammerspoon'
+cask 'licecap'
 cask 'ngrok'
 cask 'aerial'
 cask 'atom'
