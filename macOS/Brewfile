@@ -27,7 +27,6 @@ brew 'homebrew/dupes/grep'
 # Install Binaries
 brew 'tmux'
 brew 'awscli'
-brew 'git'
 brew 'hub'
 brew 'tree'
 brew 'mackup'
