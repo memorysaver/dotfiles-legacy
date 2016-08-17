@@ -18,7 +18,7 @@ brew install git && echo "Git installed"
 if test ! $(which figlet); then
   brew install figlet
 fi
-if test ! $(which figlet); then
+if test ! $(which toilet); then
   brew install toilet
 fi
 
@@ -28,7 +28,7 @@ toilet -f future _______________________ --filter metal
 
 # My dotfiles
 if [ ! -d "$HOME/.dotfiles" ]; then
-  git clone git@github.com:memorysaver/dotfiles.git ~/.dotfiles
+  git clone git://github.com/memorysaver/dotfiles.git
 fi
 
 # Install all our dependencies with bundle (See Brewfile)
