@@ -28,7 +28,7 @@ toilet -f future _______________________ --filter metal
 
 # My dotfiles
 if [ ! -d "$HOME/.dotfiles" ]; then
-  git clone git://github.com/memorysaver/dotfiles.git
+  git clone git://github.com/memorysaver/dotfiles.git ~/.dotfiles
 fi
 
 # Install all our dependencies with bundle (See Brewfile)
