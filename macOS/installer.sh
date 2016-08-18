@@ -40,14 +40,16 @@ if [ ! -d "$HOME/solarized" ]; then
   git clone git://github.com/altercation/solarized.git ~/solarized
 fi
 
-# macOS config
+
 toilet -f future mac configuration --filter gay
 toilet -f future ________________ --filter gay
-source $HOME/.dotfiles/macOS/.macOS
 
 if [ ! -d "$HOME/.dotfiles" ]; then
   echo "No dotfiles available. Aborting."
 else
+  # macOS config
+  source $HOME/.dotfiles/macOS/.macOS
+  
   # generate ssh-keygen
   if [ ! -f "$HOME/.ssh/id_rsa" ]; then
     ssh-keygen -t rsa -C "mfa1484@gmail.com"
