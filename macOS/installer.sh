@@ -59,6 +59,8 @@ else
   ln -sfv "$HOME/.dotfiles/git/.gitconfig" ~
   ln -sfv "$HOME/.dotfiles/git/.gitignore_global" ~
   ln -sfv "$HOME/.dotfiles/git/.gitmessage" ~
+  ln -sfv "$HOME/.dotfiles/zsh/.zshrc" ~
+  ln -sfv "$HOME/.dotfiles/zsh/.zshenv" ~
 
   # change origin to push dotfiles
   cd ~/.dotfiles
@@ -66,7 +68,7 @@ else
 
   # install oh-my-zsh
   if [ ! -d "$HOME/.oh-my-zsh" ]; then
-    sh -c "$(nohup curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh &)" && echo "ZSH installed"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" && echo "ZSH installed"
   fi
 
 fi
