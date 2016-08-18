@@ -42,6 +42,7 @@ brew 'pyenv'
 brew 'rbenv'
 
 # Apps
+cask '1password'
 cask 'alfred'
 cask 'hammerspoon'
 cask 'licecap'
