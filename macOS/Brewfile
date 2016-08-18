@@ -39,7 +39,9 @@ brew 'python'
 brew 'ruby'
 brew 'node'
 brew 'pyenv'
+brew 'pyenv-virtualenv'
 brew 'rbenv'
+brew 'kylef/formulae/swiftenv'
 
 # Apps
 cask '1password'
