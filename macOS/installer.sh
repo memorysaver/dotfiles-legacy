@@ -60,6 +60,10 @@ else
   ln -sfv "$HOME/.dotfiles/git/.gitignore_global" ~
   ln -sfv "$HOME/.dotfiles/git/.gitmessage" ~
 
+  # change origin to push dotfiles
+  cd ~/.dotfiles
+  git remote set-url origin git@github.com:memorysaver/dotfiles.git
+
   # install oh-my-zsh
   if [ ! -d "$HOME/.oh-my-zsh" ]; then
     sh -c "$(nohup curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh &)" && echo "ZSH installed"
