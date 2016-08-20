@@ -15,8 +15,29 @@
 	default = current
 [github]
 	user = memorysaver
+
 [color]
-	ui = auto
 	branch = auto
-	status = auto
 	diff = auto
+	status = auto
+        showbranch = auto
+	ui = true
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = red
+[format]
+        pretty = '%C(yellow)%h%Creset %C(magenta)%cd%Creset %d %s'
+
