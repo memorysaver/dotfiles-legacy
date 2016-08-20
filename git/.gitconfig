@@ -19,3 +19,4 @@
 	ui = auto
 	branch = auto
 	status = auto
+	diff = auto
