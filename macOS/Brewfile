@@ -42,7 +42,6 @@ brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew 'rbenv'
 brew 'kylef/formulae/swiftenv'
-brew 'autoenv'
 
 # Apps
 cask '1password'
