@@ -7,7 +7,7 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-	name = memorysaver
+	name = Memorysaver
 	email = mfa1484@gmail.com
 [commit]
 	template = ~/.gitmessage
