@@ -63,6 +63,7 @@ else
   ln -sfv "$HOME/.dotfiles/git/.gitmessage" ~
   ln -sfv "$HOME/.dotfiles/zsh/.zshrc" ~
   ln -sfv "$HOME/.dotfiles/zsh/.zshenv" ~
+  ln -sfv "$HOME/.dotfiles/.spacemacs" ~
 
   # change origin to push dotfiles
   cd ~/.dotfiles
