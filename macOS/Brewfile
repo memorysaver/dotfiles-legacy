@@ -44,8 +44,7 @@ brew 'pyenv-virtualenv'
 brew 'rbenv'
 brew 'the_silver_searcher'
 brew 'emacs-plus'
-
-linkapps
+linkapps 'emacs-plus'
 
 # Apps
 cask '1password'
@@ -54,7 +53,6 @@ cask 'hammerspoon'
 cask 'licecap'
 cask 'ngrok'
 cask 'aerial'
-cask 'atom'
 cask 'dropbox'
 cask 'docker'
 cask 'evernote'
