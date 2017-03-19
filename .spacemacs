@@ -48,8 +48,12 @@ values."
             shell-default-position 'bottom
             shell-default-shell 'multi-term
             shell-default-term-shell "/usr/local/bin/zsh")
+
+     ;; code checking
      spell-checking
-     syntax-checking
+     (syntax-checking :variables
+                      syntax-checking-enable-tooltips t
+                      syntax-checking-enable-by-default t)
 
      ;; version-control
      git
@@ -58,13 +62,15 @@ values."
                       version-control-diff-tool 'git-gutter+)
 
      ;; Program Languages support
+     docker
      javascript
      markdown
      terraform
      emacs-lisp
      (python :variables
              python-test-runner 'pytest
-             python-sort-imports-on-save t)
+             python-sort-imports-on-save t
+             python-enable-yapf-format-on-save t)
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -149,10 +155,10 @@ values."
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 18
+                               :size 16
                                :weight normal
                                :width normal
-                               :powerline-scale 1.1)
+                               :powerline-scale 1.2)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The key used for Emacs commands (M-x) (after pressing on the leader key).
@@ -308,6 +314,8 @@ before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   (setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
   (setq exec-path (append exec-path '("/usr/local/bin")))
+  (setq-default git-magit-status-fullscreen t)
+  (setq magit-repository-directories '("~/Documents/"))
   )
 
 (defun dotspacemacs/user-config ()
@@ -318,6 +326,7 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (global-linum-mode)
+  (setq powerline-default-separator 'utf-8)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
