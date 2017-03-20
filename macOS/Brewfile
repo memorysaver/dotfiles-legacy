@@ -43,6 +43,7 @@ brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew 'rbenv'
 brew 'the_silver_searcher'
+brew 'ispell'
 brew 'emacs-plus'
 linkapps 'emacs-plus'
 
