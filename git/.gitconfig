@@ -9,7 +9,7 @@
 [user]
 	name = Memorysaver
 	email = mfa1484@gmail.com
-	signingkey = 7B49ABD2
+	signingkey = 080C0EDF5E023585
 [commit]
 	template = ~/.gitmessage
 	gpgsign = true
