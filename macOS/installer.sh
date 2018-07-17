@@ -63,6 +63,7 @@ else
   ln -sfv "$HOME/.dotfiles/zsh/.zshenv" ~
   ln -sfv "$HOME/.dotfiles/.spacemacs" ~
   lb -sfv "$HOME/.dotfiles/yasnippet/" ~/.emacs.d/private/snippets/
+  ln -s /usr/local/Cellar/emacs-plus/*/Emacs.app/ /Applications/
 
   # change origin to push dotfiles
   cd ~/.dotfiles
