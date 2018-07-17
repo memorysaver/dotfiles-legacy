@@ -5,7 +5,12 @@ export ZSH=/Users/memorysaver/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="mfa"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs virtualenv newline)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status ram)
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_COLOR_SCHEME='dark'
+
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -97,5 +102,5 @@ if test -f ~/.gnupg/.gpg-agent-info -a -n "$(pgrep gpg-agent)"; then
   GPG_TTY=$(tty)
   export GPG_TTY
 else
-  eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
+  eval $(gpg-agent --daemon ~/.gnupg/.gpg-agent-info)
 fi
