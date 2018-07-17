@@ -9,8 +9,10 @@
 [user]
 	name = Memorysaver
 	email = mfa1484@gmail.com
+	signingkey = 7B49ABD2
 [commit]
 	template = ~/.gitmessage
+	gpgsign = true
 [push]
 	default = current
 [github]
@@ -41,3 +43,5 @@
 [format]
         pretty = '%C(yellow)%h%Creset %C(magenta)%cd%Creset %d %s'
 
+[gpg]
+	program = /usr/local/bin/gpg

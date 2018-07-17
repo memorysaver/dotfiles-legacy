@@ -49,7 +49,7 @@ if [ ! -d "$HOME/.dotfiles" ]; then
 else
   # macOS config
   source $HOME/.dotfiles/macOS/.macOS
-  
+
   # generate ssh-keygen
   if [ ! -f "$HOME/.ssh/id_rsa" ]; then
     ssh-keygen -t rsa -C "mfa1484@gmail.com"
@@ -64,6 +64,7 @@ else
   ln -sfv "$HOME/.dotfiles/zsh/.zshrc" ~
   ln -sfv "$HOME/.dotfiles/zsh/.zshenv" ~
   ln -sfv "$HOME/.dotfiles/.spacemacs" ~
+  lb -sfv "$HOME/.dotfiles/yasnippet/" ~/.emacs.d/private/snippets/
 
   # change origin to push dotfiles
   cd ~/.dotfiles
