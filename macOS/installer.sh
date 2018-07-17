@@ -47,8 +47,6 @@ toilet -f future ________________ --filter gay
 if [ ! -d "$HOME/.dotfiles" ]; then
   echo "No dotfiles available. Aborting."
 else
-  # macOS config
-  source $HOME/.dotfiles/macOS/.macOS
 
   # generate ssh-keygen
   if [ ! -f "$HOME/.ssh/id_rsa" ]; then
@@ -74,5 +72,8 @@ else
   if [ ! -d "$HOME/.oh-my-zsh" ]; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" && echo "ZSH installed"
   fi
+
+  # macOS config
+  source $HOME/.dotfiles/macOS/.macOS2
 
 fi
